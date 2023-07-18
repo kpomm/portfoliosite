@@ -1,0 +1,404 @@
+/* doing imports in css to keep all the styling away from the html */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+/* from class */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* body and text */
+body {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	background-color: aliceblue;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+/* basic columns and sections */
+
+/* boilerplate code from https://brunchlabs.slides.com/timtregubov/cs52-css?token=pW34poG0#/9/1 */
+/* aligns objects in a row -- a set of columns, with ample space around them  */
+.columns {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 2%;
+	flex-wrap: wrap;
+}
+
+.columns > li {
+	margin: 1%;
+}
+
+li > img {
+	width: 100%;
+}
+
+.sub-section > ul > li {
+	text-align: left;
+}
+
+.half-element {
+	width: 40%;
+}
+
+.section {
+	width: 100%;
+	text-align: center;
+	padding: 2%;
+}
+
+/* moving onto the nav bar */
+#logo:hover {
+	color: #4895ef;
+}
+
+/* elements from the following tutorial */
+/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+.hamburger-container {
+	width: 100%;
+	height: 8vh;
+	background-color: white;
+	padding: 0;
+}
+
+.hamburger-container > input,
+.hamburger {
+	visibility: hidden;
+}
+
+/* navigation bar */
+/* modified code from here, but used display: flex instead for more ease of use */
+/* https://www.w3schools.com/css/css_navbar.asp */
+ul.nav-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgb(255, 255, 255);
+}
+
+/* navigation bar */
+/* modified code from here */
+/* https://www.w3schools.com/css/css_navbar.asp */
+ul.nav-list > li a {
+	display: block;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+	color: black;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-right > a:hover {
+	color: #4895ef;
+}
+
+#nav-about > a:hover {
+	color: #a663cc;
+}
+
+#nav-spring > a:hover {
+	color: #06d6a0;
+}
+
+#nav-products > a:hover {
+	color: #ef476f;
+}
+
+#toggle {
+	display: hidden;
+}
+
+.purple {
+	color: #a663cc;
+}
+
+.green {
+	color: #06d6a0;
+}
+
+.pink {
+	color: #ef476f;
+}
+
+.hover-underline:hover {
+	text-decoration: underline;
+}
+
+/* moving onto the first section, landing */
+#landing {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	text-align: left;
+}
+
+.button-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0;
+}
+
+/* button stuff */
+
+/* learned about border radius here: https://www.w3schools.com/css/css3_buttons.asp */
+button {
+	width: 130px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: #4895ef;
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 10px;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+}
+
+/* I used the following forum to learn how to add a border to a button on hover -- I was having trouble */
+/* https://stackoverflow.com/questions/66230712/change-button-border-on-hover */
+button:hover {
+	border-bottom: 5px solid #3875bb;
+}
+
+.bios {
+	background-color: white;
+	color: black;
+}
+
+.bios:hover {
+	border-bottom: 3px solid rgb(174, 174, 174);
+}
+
+/* next section, quick facts */
+
+.fact {
+	width: 25%;
+	/* background-color: rgb(255, 255, 255); */
+	padding: 1%;
+	text-align: left;
+}
+
+.fact > a {
+	text-decoration: none;
+}
+
+/* next section, flavors */
+#flavors {
+	padding: 0.5%;
+	background-image: url(img/signup.jpg);
+	background-size: 100%;
+	background-position: 50%;
+}
+
+#flavors li {
+	color: white;
+}
+
+#flavors > ul.columns {
+	padding: 0.5%;
+}
+
+#flavor-sublist {
+	padding: 10px;
+}
+
+#flavor-sublist > li {
+	display: inline-block;
+	padding: 20px;
+	align-items: center;
+}
+
+/* next section, people */
+
+.person {
+	width: 20%;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #c9e2ff;
+}
+
+.person > img {
+	width: 10em;
+	border-radius: 50%;
+}
+
+/* next section, places */
+
+.place {
+	width: 20%;
+}
+
+.place > img {
+	width: 13em;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+#science > img {
+	width: 70%;
+}
+
+/* used the following documentation to learn about how to style inputs: https://www.w3schools.com/css/css_form.asp */
+input[type="email"] {
+	height: 40px;
+	width: 300px;
+}
+
+input[type="submit"] {
+	width: 100px;
+	height: 40px;
+	background-color: lightgrey;
+	color: black;
+	border-radius: 4px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: #4895ef;
+	color: white;
+}
+
+/* from course website */
+@media (max-width: 640px) {
+	/* centering all content on the website  */
+	.section {
+		justify-content: center;
+	}
+
+	ul.nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* The below code (HAMBURGER BAR SECTION) was created inspired by the tutorial below. I modified a few things as necessary to fit the aims of my website */
+	/* HOWEVER, I definitely started with the code from this tutorial, I do not take credit */
+	/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+
+	/* This is to make the hamburger menu visible when we change to mobile */
+	.hamburger-container > input,
+	.hamburger {
+		visibility: visible;
+	}
+
+	/* styling the hamburger icon */
+	.hamburger {
+		z-index: 1;
+		position: absolute;
+		top: 1%;
+		right: 0px;
+		margin: 3%;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	/* this is a 'slice' as used in the tutorial, modified to my liking */
+	/* definitely used the css used as a reference point */
+	.hamburger .slice {
+		width: 100%;
+		height: 4px;
+		background: #4895ef;
+	}
+
+	/* checkbox moved to the top right corner where the hamburger is */
+	/* modified boilerplate code */
+	.hamburger-container .checkbox {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	/* this sets a starting location for the navigation stuff before we translate it over */
+	/* THIS CODE IS WAS DIRECTLY TAKEN FROM https://unused-css.com/blog/css-only-hamburger-menu/ */
+	/* IT WAS THEN MODIFIED TO MY LIKING */
+	.nav-stuff {
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		background: black;
+		transform: translateX(+100%);
+		transition: transform 0.3s linear;
+	}
+
+	/* if we click the check box, the menu moves over */
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff {
+		visibility: visible;
+		transform: translateX(0%);
+	}
+
+	/* same stuff but for the links */
+	/* from same tutorial */
+	.hamburger-container .nav-stuff a {
+		visibility: hidden;
+		transition: visibility 0.3s linear;
+	}
+
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff a {
+		visibility: visible;
+	}
+
+	/* make flex columns for mobile! */
+	.columns {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* this section modifies main structural elements that define my page */
+	.half-element {
+		width: 80%;
+	}
+
+	.fact {
+		width: 80%;
+	}
+
+	.person {
+		width: 100%;
+	}
+
+	.place {
+		width: 90%;
+	}
+}
