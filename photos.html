@@ -1,0 +1,55 @@
+<!-- this is katherine's first draft of html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Here is the set up for FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/72348e10b0.js"
+			crossorigin="anonymous"
+		></script>
+		<title>kpomm</title>
+	</head>
+	<body>
+		<nav>
+			<!-- This entire hamburger container is from the following link  -->
+			<!-- https://unused-css.com/blog/css-only-hamburger-menu/ -->
+			<!-- I modified the css for my purposes  -->
+			<!-- I do not take credit for this structure AT ALL, IT IS DIRECTLY FROM THE ABOVE TUTORIAL BECAUSE I COULD NOT FIGURE IT OUT ON MY OWN -->
+			<div class="hamburger-container">
+				<input
+					class="checkbox"
+					type="checkbox"
+					id="hamburger-toggle"
+					aria-label="Toggle Navigation"
+				/>
+				<label class="hamburger" for="hamburger-toggle">
+					<span class="slice"></span>
+					<span class="slice"></span>
+					<span class="slice"></span>
+				</label>
+				<div class="nav-stuff">
+					<ul class="nav-list">
+						<li>
+							<a href="index.html" id="logo"
+								><i class="fa-solid fa-k fa-2xl"></i>
+							</a>
+						</li>
+						<!-- used the following documentation to implement some buttons on the right -- this code distinguishes the buttons on the right with a new class -->
+						<!-- https://www.w3schools.com/howto/howto_css_topnav_right.asp -->
+						<li class="nav-right"><a href="#">contact me</a></li>
+						<li class="nav-right"><a href="#">design</a></li>
+						<li class="nav-right"><a href="projects.html">projects</a></li>
+						<li class="nav-right"><a href="#">photos</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="below-nav-bar"></div>
+		</nav>
+		<div class="photo-grid"></div>
+	</body>
+</html>
