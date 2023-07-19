@@ -55,6 +55,16 @@ h2 > a:hover {
 h3 {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.8rem;
+	color: #4b4453;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.3rem;
+	color: #4b4453;
+	margin-bottom: 0;
+
 }
 
 p {
@@ -64,6 +74,20 @@ p {
 
 p > a {
 	color: #4b4453;
+}
+
+.text-section {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 0;
+}
+
+.project-list {
+	list-style-type: none;
+	width: 70%;
 }
 
 #profile-pic {
@@ -145,7 +169,7 @@ li > img {
 }
 
 .img-contain {
-	object-fit:fill;
+	object-fit: fill;
 	max-height: 80%;
 	margin-top: 10%;
 }
@@ -159,6 +183,7 @@ li > img {
 
 /* moving onto the nav bar */
 #logo {
+	margin-top: 2px;
 	color: #4b4453;
 }
 
@@ -238,98 +263,6 @@ ul.nav-list > li a {
 	text-align: left;
 }
 
-/* I used the following forum to learn how to add a border to a button on hover -- I was having trouble */
-/* https://stackoverflow.com/questions/66230712/change-button-border-on-hover */
-
-.fact {
-	width: 25%;
-	/* background-color: rgb(255, 255, 255); */
-	padding: 1%;
-	text-align: left;
-}
-
-.fact > a {
-	text-decoration: none;
-}
-
-/* next section, flavors */
-#flavors {
-	padding: 0.5%;
-	background-image: url(img/signup.jpg);
-	background-size: 100%;
-	background-position: 50%;
-}
-
-#flavors li {
-	color: white;
-}
-
-#flavors > ul.columns {
-	padding: 0.5%;
-}
-
-#flavor-sublist {
-	padding: 10px;
-}
-
-#flavor-sublist > li {
-	display: inline-block;
-	padding: 20px;
-	align-items: center;
-}
-
-/* next section, people */
-
-.person {
-	width: 20%;
-	padding: 15px;
-	border-radius: 12px;
-	background-color: #c9e2ff;
-}
-
-.person > img {
-	width: 10em;
-	border-radius: 50%;
-}
-
-/* next section, places */
-
-.place {
-	width: 20%;
-}
-
-.place > img {
-	width: 13em;
-}
-
-.circle {
-	border-radius: 50%;
-}
-
-#science > img {
-	width: 70%;
-}
-
-/* used the following documentation to learn about how to style inputs: https://www.w3schools.com/css/css_form.asp */
-input[type="email"] {
-	height: 40px;
-	width: 300px;
-}
-
-input[type="submit"] {
-	width: 100px;
-	height: 40px;
-	background-color: lightgrey;
-	color: black;
-	border-radius: 4px;
-	border: none;
-}
-
-input[type="submit"]:hover {
-	background-color: #4895ef;
-	color: white;
-}
-
 /* photogrid stuff */
 .photo-grid {
 	display: flex;
@@ -350,7 +283,7 @@ input[type="submit"]:hover {
 
 .photo-grid > img:hover {
 	transform: translateY(-5px);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* from course website */
